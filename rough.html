@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+        var unit = 950
+        var billamount =0 
+        if(unit <= 500){
+            if(unit <= 100){
+                console.log("first 100 unit is free")
+            }else if(unit<=200){
+                billamount=(200-100)*2.35
+
+            }else if (unit<=400) {
+                billamount=(unit -200)*4.70 + (100*2.35)
+
+            }else if (unit<=500) {
+                billamount=(unit -400)*6.30 + (200*4.70)+ (100*2.35)
+
+            }
+        }else if (unit > 500) {
+            if (unit <=600) {
+                billamount=(unit-500)*8.40 + (100*6.30) + (300*4.70) 
+
+            }else if(unit <= 800){
+                billamount = (unit-600)*9.45 +(100*8.40) +(100*6.30) + (300*4.70)
+
+            }else if (unit <= 1000) {
+                billamount = (unit - 800)*10.50 +(200*9.45)+(100*8.40) +(100*6.30) + (300*4.70)
+   
+            }
+            else if (unit > 1000) {
+                billamount = (unit - 1000)*11.55 +(200*10.50)+(200*9.45)+(100*8.40) +(100*6.30) + (300*4.70)
+            }
+        }
+
+        console.log(billamount)
+     </script>
+</head>
+<body>
+    
+</body>
+</html>
